@@ -1,0 +1,25 @@
+<div ng-controller="homeCtrl">
+    <div class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a class="icon"><img src="assets/contract-white.svg" width="35" height="35">&nbsp;&nbsp;TODO</a>
+                    <div class="dropdown" style="color:black;">
+                        <div style="font-size: 1.5em;">{{username | firstLetter | uppercase}}</div>
+                        <div class="dropdown-content">
+                            <section class="buttons">
+                                    <a data-ng-click="gotoHome()" class="btn btn-2">Home</a>
+                                    <a data-ng-click="gotoDashboard()" class="btn btn-2">Dashboard</a>
+                                    <a data-ng-click="gotoProfile()" class="btn btn-2">Profile</a>
+                                    <a data-ng-click = "logout()" class="btn btn-2">Logout</a>
+                            </section>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <ui-view></ui-view>
+</main>
+</div>

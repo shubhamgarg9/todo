@@ -1,0 +1,174 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* display: inline; */
+  }
+/* span{ */
+    /* background:rgb(15, 199, 153);
+    border: 5px solid #DFDFDF;
+    color: #cceb21;
+    font-size: 1em;
+    height: auto; */
+    /* letter-spacing: 1px; */
+    /* line-height: 30px; */
+    /* position: relative; */
+    /* text-align: justify;
+    text-justify: inter-word; */
+    /* top: -80px;
+    left:-30px; */
+    /* float: right;
+    display:none;
+    padding:0 20px; */
+    
+/* } */
+/* span:after{
+    content:'';
+    position:absolute;
+    bottom:-10px; 
+    width:10px;
+    height:10px;
+    border-bottom:5px solid #810a0a;
+    border-right:5px solid #6b09ec;
+    background:black;
+    left:50%;
+    margin-left:-10px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+} */
+p{
+    margin-left: 1em;
+    margin-right: 3em;
+    float:left;
+    position:relative;
+    cursor:pointer;
+    font-size: 1.5em;
+    font-family: Lato;
+}
+
+/* p:hover span{
+    display:block;
+
+} */
+
+#form{
+    /* margin: 3em auto; */
+    /* margin: 3em 3em; */
+    /* border-radius: 12%;; */
+}
+
+.box-styling{
+    margin: 30px 20px;
+    width: 300px;
+    /* border-radius: 3%; */
+    /* border: 2px solid #666; */
+}
+
+.add{
+    margin: 20px 100px;
+    padding: 0 50px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #93C2AD;
+  
+}
+
+
+.add:hover {background-color: #3e8e41}
+
+.add:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.icon:hover{
+    box-shadow: 3px 3px rgba(141, 143, 142,0.5);
+    
+}
+
+.todoBox{
+    background: linear-gradient(#6441A5,#2a0845);
+    padding: 1em 3em;
+    border-radius: 2%;
+    margin: 20px 20px 70px 20px;
+    /* font: 400 white; */
+    /* color: white; */
+}
+
+#todoName{
+    text-align: left; 
+    width:9em; 
+    font-size: 1.2em; 
+    color:white;
+}
+
+/* #sameLine{
+    display: inline;
+} */
+
+.one-task > input{
+    width: 20px;
+    height: 20px;
+}
+
+.one-task {
+    display: flex;
+    /* height: 200px; */
+    align-items: baseline;
+    /* background-color: DodgerBlue; */
+  }
+  
+.one-task > p,input,b {
+    /* background-color: #f1f1f1; */
+    /* width: 100px; */
+    /* margin: 10px; */
+    text-align: center;
+    /* line-height: 75px; */
+    /* font-size: 30px; */
+}
+  
+#desc{
+    width: 20em;
+    /* background: #f99b6b; */
+    /* border-radius: 5%; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#content{
+    background: #442271;
+    color: #fff;
+    border: 3px solid white;
+    /* border-radius: 5%; */
+    margin: 20px;
+    padding: 1.5em;
+    font-size: 0.98em;
+    font-family: monospace;
+}
+
+.row{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#form-div{
+    background: linear-gradient(-135deg,#e84f71,#3f45b2); 
+    border-radius: 2%;
+    width: 350px;
+    height: 400px;
+
+}
+
+#form-div:hover, .todoBox:hover{
+    box-shadow: 0 46px 113px -5px rgba(0,0,0,.7);
+}

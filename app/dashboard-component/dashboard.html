@@ -1,0 +1,53 @@
+<div data-ng-app="dashboard" data-ng-controller="dashboardCtrl">
+
+    <div class="container">
+        <div class="row">
+            <div id="form-div">
+                <form name="todoForm" id="form" ng-submit="addTask()">
+                    <input type="text" class="box-styling" name="todoName" ng-model="todoObj.todoName" 
+                    placeholder="&nbsp;&nbsp;TODO name" style="text-align: left;"
+                        required />
+                    <!-- <span ng-show="todoForm.todoName.$touched && todoForm.todoName.$invalid">
+                        The name of todo is required.</span> -->
+                    <textarea class="box-styling" name="todoDesc" ng-model="todoObj.todoDesc" 
+                    placeholder="&nbsp;&nbsp;TODO Description" rows='5'></textarea>
+                    <br>
+                    <button class="add" class="btn btn-success" ng-disabled="todoForm.$invalid" 
+                    ng-click="addTask()">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="container">
+        <div class="d-flex">
+            <div class="todoBox">
+                <ul>
+                    <li data-ng-repeat="task in taskList">
+                        <div class="one-task">
+                            <input type="checkbox" ng-click="strike($index)">
+                                <p ng-if="task.check==true" id="todoName" style="text-decoration: line-through" 
+                                ng-mouseover="tododesc($index)" ng-mouseleave="tododescno()">
+                                    {{task.todoName}}
+                                <p ng-if="task.check!=true" id="todoName" ng-mouseover="tododesc($index)" ng-mouseleave="tododescno()">
+                                    {{task.todoName}}
+                                </p>
+                            <b style="float:right" data-ng-click="removeTask($index)">
+                                <a class="icon">
+                                    <img src="assets/cancel.svg" width="25" height="25">
+                                </a>
+                            </b>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="desc" class="ml-auto">
+                <div id="content">{{print}}</div>                  
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- https://codepen.io/gfrancesca/pen/gbpoxQ -->
